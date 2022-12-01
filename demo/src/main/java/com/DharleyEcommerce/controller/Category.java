@@ -26,7 +26,7 @@ public class Category {
 	@Autowired
 	private CategoryRepository categoryRepo;
 		
-	
+	 
 	@GetMapping("/category")
 	private List<CategoryM> CategoryList(CategoryM categoryM, Model model, BindingResult bindingResult) {
 		List<CategoryM> categorys = categoryRepo.findAll();
